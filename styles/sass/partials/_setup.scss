@@ -5,3 +5,26 @@ html { box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit}
 
 .srOnly { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+.skipLink {
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+    padding: 10px 0;
+    display: inline-block;
+    position: absolute;
+    left: -1000px;
+    top: 0;
+    z-index: 999;
+
+    &:focus {
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}

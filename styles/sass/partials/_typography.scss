@@ -1,0 +1,40 @@
+body {
+    font-family: 'Lora', serif;
+    @include fontSize(18);
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    @include fontSize(50);
+    line-height: 24px;
+    letter-spacing: 1.1px;
+    margin: 0; 
+}
+
+h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+    @include fontSize(22);
+    font-weight: 700; 
+    letter-spacing: 0.5px; 
+    text-transform: uppercase; 
+}
+
+a {
+    font-family: 'Raleway', sans-serif; 
+    @include fontSize(18); 
+    letter-spacing: 0.5px; 
+}
+
+.counter p {
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 700; 
+    @include fontSize(20);
+}
+footer {
+    font-family: 'Raleway', sans-serif;
+    @include fontSize(18);
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}

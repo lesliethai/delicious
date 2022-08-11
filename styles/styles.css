@@ -225,3 +225,185 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.skipLink {
+  background: #fff;
+  color: #000;
+  font-size: 1rem;
+  padding: 10px 0;
+  display: inline-block;
+  position: absolute;
+  left: -1000px;
+  top: 0;
+  z-index: 999;
+}
+.skipLink:focus {
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-size: 0.9rem;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-size: 2.5rem;
+  line-height: 24px;
+  letter-spacing: 1.1px;
+  margin: 0;
+}
+
+h2, h3, h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.counter p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-size: 1rem;
+}
+
+footer {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-size: 0.9rem;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: url("../assets/home-1.jpeg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  padding: 40px;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navBar li:not(:last-child) {
+  margin-right: 20px;
+}
+.navBar a {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2E2E2E;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.navBar a:hover, .navBar a:focus {
+  opacity: 0.6;
+}
+.navBar span {
+  color: #64A604;
+}
+.navBar .fa-bag-shopping {
+  position: relative;
+}
+.navBar .counter {
+  background-color: #64A604;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  position: relative;
+  bottom: -10px;
+  left: -10px;
+}
+.navBar .counter p {
+  color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popularRecipes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popularRecipesContent {
+  width: 50%;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.popularRecipesContent h2 {
+  margin-bottom: 40px;
+}
+
+.popularRecipesImg {
+  width: 50%;
+}
