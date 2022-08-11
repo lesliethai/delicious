@@ -18,3 +18,9 @@ img {
 a {
     text-decoration: none; 
 }
+
+.linkButton {
+    color: $quaternary; 
+    background-color: $secondary; 
+    padding: 15px 45px;
+}

@@ -267,10 +267,10 @@ h1 {
 
 h2, h3, h4 {
   font-family: "Raleway", sans-serif;
-  font-size: 22px;
-  font-size: 1.1rem;
+  font-size: 35px;
+  font-size: 1.75rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
 }
 
@@ -281,11 +281,21 @@ a {
   letter-spacing: 0.5px;
 }
 
+p {
+  color: #2E2E2E;
+}
+
 .counter p {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 20px;
   font-size: 1rem;
+}
+
+.linkButton {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 footer {
@@ -315,6 +325,12 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.linkButton {
+  color: #F6F6F6;
+  background-color: #64A604;
+  padding: 15px 45px;
 }
 
 header {
@@ -387,7 +403,7 @@ header {
 
 .popularRecipesContent {
   width: 50%;
-  padding: 100px;
+  padding: 145px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,10 +414,25 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 .popularRecipesContent h2 {
   margin-bottom: 40px;
+  position: relative;
+}
+.popularRecipesContent h2::after {
+  content: "";
+  width: 20%;
+  padding-top: 30px;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 3px solid #64A604;
+}
+.popularRecipesContent a {
+  margin-top: 50px;
 }
 
 .popularRecipesImg {
