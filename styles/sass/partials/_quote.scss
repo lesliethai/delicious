@@ -1,0 +1,42 @@
+.clientQuote {
+    background-color: $senary;
+    padding: 150px 0 150px;
+    position: relative;
+    text-align: center;
+
+    &::before,
+    &::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: $quaternary; 
+        @include fontSize(75); 
+        position: absolute;
+    }
+
+    &::before {
+        content: '\f10d';
+        top: 40%;
+        left: 23%; 
+    }
+
+    &::after {
+        content: '\f10e';
+        bottom: 47%;
+        right: 23%;
+    }
+
+    .arrow {
+        border: none; 
+        background-color: transparent;
+        color: $quaternary; 
+        margin-top: 100px; 
+    }
+
+    .rightArrow {
+        margin-left: 50px;
+    }
+
+    h2::after {
+        width: 10%; 
+    }
+}

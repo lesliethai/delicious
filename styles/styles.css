@@ -543,6 +543,9 @@ header {
   right: -3%;
   top: -29%;
 }
+.restaurants h2::after {
+  width: 10%;
+}
 
 .imgGallery ul {
   display: -webkit-box;
@@ -553,4 +556,41 @@ header {
 }
 .imgGallery li {
   width: 33.3333333333%;
+}
+
+.clientQuote {
+  background-color: #E0EC9C;
+  padding: 150px 0 150px;
+  position: relative;
+  text-align: center;
+}
+.clientQuote::before, .clientQuote::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #F6F6F6;
+  font-size: 75px;
+  font-size: 3.75rem;
+  position: absolute;
+}
+.clientQuote::before {
+  content: "\f10d";
+  top: 40%;
+  left: 23%;
+}
+.clientQuote::after {
+  content: "\f10e";
+  bottom: 47%;
+  right: 23%;
+}
+.clientQuote .arrow {
+  border: none;
+  background-color: transparent;
+  color: #F6F6F6;
+  margin-top: 100px;
+}
+.clientQuote .rightArrow {
+  margin-left: 50px;
+}
+.clientQuote h2::after {
+  width: 10%;
 }
