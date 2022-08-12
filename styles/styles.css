@@ -540,6 +540,17 @@ header {
 .restaurants .restaurantsLogo {
   width: 25%;
   position: absolute;
-  right: -25px;
-  top: -105px;
+  right: -3%;
+  top: -29%;
+}
+
+.imgGallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.imgGallery li {
+  width: 33.3333333333%;
 }
