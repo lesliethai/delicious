@@ -1,8 +1,8 @@
 header {
-    background: url("../assets/home-1.jpeg") no-repeat center;
-    background-size: cover; 
+    background: url("../assets/home-1.jpeg") no-repeat;
+    background-size: cover;
     height: 100vh; 
-    padding: 40px;  
+    padding: 40px;
 } 
 
 .navBar {
@@ -15,7 +15,7 @@ header {
 
     li {
         &:not(:last-child) {
-            margin-right: 20px;
+            margin-right: 30px;
         }
     }
 

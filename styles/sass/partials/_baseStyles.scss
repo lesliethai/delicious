@@ -23,4 +23,13 @@ a {
     color: $quaternary; 
     background-color: $secondary; 
     padding: 15px 45px;
+    height: 54px;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+        color: $secondary;
+        background-color: $quaternary;
+        border: 1px solid $secondary;
+    }
 }
