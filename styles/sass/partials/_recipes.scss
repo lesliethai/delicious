@@ -12,27 +12,8 @@
     align-items: center; 
     text-align: center; 
 
-    h2 {
-        margin-bottom: 40px; 
-        position: relative; 
-
-        &::after {
-            content: '';
-            width: 20%; 
-            padding-top: 30px;
-            display: block;
-            margin: 0 auto;   
-            border-bottom: 3px solid $secondary;
-        }
-    }
-
     a {
         margin-top: 50px; 
-
-        &:hover,
-        &:focus {
-            color: $secondary;
-        }
     }
 }
 

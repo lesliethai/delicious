@@ -309,8 +309,8 @@ footer {
 }
 
 .wrapper {
-  max-width: 1200px;
-  width: 85%;
+  max-width: 1000px;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -343,9 +343,24 @@ a {
   border: 1px solid #64A604;
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+h2::after {
+  content: "";
+  width: 20%;
+  padding-top: 30px;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 3px solid #64A604;
+}
+
 header {
   background: url("../assets/home-1.jpeg") no-repeat;
   background-size: cover;
+  background-position: 50% 5%;
   height: 100vh;
   padding: 40px;
 }
@@ -430,28 +445,9 @@ header {
           align-items: center;
   text-align: center;
 }
-.popularRecipesContent h2,
-.recipesListContent h2 {
-  margin-bottom: 40px;
-  position: relative;
-}
-.popularRecipesContent h2::after,
-.recipesListContent h2::after {
-  content: "";
-  width: 20%;
-  padding-top: 30px;
-  display: block;
-  margin: 0 auto;
-  border-bottom: 3px solid #64A604;
-}
 .popularRecipesContent a,
 .recipesListContent a {
   margin-top: 50px;
-}
-.popularRecipesContent a:hover, .popularRecipesContent a:focus,
-.recipesListContent a:hover,
-.recipesListContent a:focus {
-  color: #64A604;
 }
 
 .popularRecipesContent {
@@ -524,4 +520,26 @@ header {
 }
 .recipeItemContainer .item6::before {
   content: "\f2e5";
+}
+
+.restaurants {
+  margin: 200px 0 150px;
+}
+.restaurants p {
+  text-align: center;
+}
+.restaurants .restaurantsImgContainer {
+  position: relative;
+}
+.restaurants .restaurantsImg {
+  margin: 50px;
+}
+.restaurants .restaurantsImg img {
+  margin: 0 auto;
+}
+.restaurants .restaurantsLogo {
+  width: 25%;
+  position: absolute;
+  right: -25px;
+  top: -105px;
 }

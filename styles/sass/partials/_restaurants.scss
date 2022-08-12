@@ -1,0 +1,26 @@
+.restaurants {
+    margin: 200px 0 150px;
+
+    p {
+        text-align: center;
+    }
+    
+    .restaurantsImgContainer {
+        position: relative;
+    }
+
+    .restaurantsImg {
+        margin: 50px;
+
+        img {  
+            margin: 0 auto;
+        }
+    }
+
+    .restaurantsLogo {
+        width: 25%;
+        position: absolute;
+        right: -25px; 
+        top: -105px; 
+    }
+}
