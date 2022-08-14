@@ -267,10 +267,10 @@ h1 {
 
 h2, h3, h4 {
   font-family: "Raleway", sans-serif;
-  font-size: 35px;
-  font-size: 1.75rem;
+  font-size: 20px;
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
@@ -282,8 +282,8 @@ a {
 }
 
 p {
-  font-size: 18px;
-  font-size: 0.9rem;
+  font-size: 16px;
+  font-size: 0.8rem;
   color: rgba(46, 46, 46, 0.6);
 }
 
@@ -300,17 +300,51 @@ p {
   letter-spacing: 0.5px;
 }
 
-footer {
+.quote {
+  color: #333333;
+  font-size: 24px;
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 36px;
+  letter-spacing: 0.6px;
+}
+
+footer h5 {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-size: 0.9rem;
+  font-size: 20px;
+  font-size: 1rem;
   line-height: 24px;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+footer a {
+  font-family: "Lora", serif;
+}
+footer h4, footer h5 {
+  margin-bottom: 20px;
+}
+footer p, footer a {
+  color: rgba(246, 246, 246, 0.6);
+  letter-spacing: 0.3px;
+}
+footer h4 {
+  color: #64A604;
+}
+footer h5 {
+  color: #F6F6F6;
+}
+footer input#email,
+footer button {
+  color: #2E2E2E;
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 18px;
+  font-size: 0.9rem;
 }
 
 .wrapper {
   max-width: 1000px;
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -461,11 +495,10 @@ header {
 
 .recipesListContent {
   background-color: rgba(153, 153, 153, 0.2);
-  padding: 0 120px;
 }
 
 .recipeItemContainer {
-  padding: 25px 0;
+  padding: 30px 50px 30px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,13 +512,11 @@ header {
   width: 45%;
 }
 .recipeItemContainer .item:not(.itemNoMargin) {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .recipeItemContainer .item h3 {
   text-align: left;
   margin-bottom: 10px;
-  font-size: 25px;
-  font-size: 1.25rem;
 }
 .recipeItemContainer .item p {
   text-align: left;
@@ -497,10 +528,10 @@ header {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #2E2E2E;
-  font-size: 40px;
-  font-size: 2rem;
+  font-size: 35px;
+  font-size: 1.75rem;
   position: absolute;
-  left: -50px;
+  left: -40px;
   top: 3px;
 }
 .recipeItemContainer .item1::before {
@@ -513,7 +544,7 @@ header {
   content: "\f0f4";
 }
 .recipeItemContainer .item4::before {
-  content: "\f000";
+  content: "\f57b";
 }
 .recipeItemContainer .item5::before {
   content: "\f06c";
@@ -536,12 +567,13 @@ header {
 }
 .restaurants .restaurantsImg img {
   margin: 0 auto;
+  width: 80%;
 }
 .restaurants .restaurantsLogo {
-  width: 25%;
+  width: 18%;
   position: absolute;
-  right: -3%;
-  top: -29%;
+  right: 7%;
+  top: -25%;
 }
 .restaurants h2::after {
   width: 10%;
@@ -567,7 +599,7 @@ header {
 .clientQuote::before, .clientQuote::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: #F6F6F6;
+  color: rgba(246, 246, 246, 0.8);
   font-size: 75px;
   font-size: 3.75rem;
   position: absolute;
@@ -575,12 +607,12 @@ header {
 .clientQuote::before {
   content: "\f10d";
   top: 40%;
-  left: 23%;
+  left: 20%;
 }
 .clientQuote::after {
   content: "\f10e";
   bottom: 47%;
-  right: 23%;
+  right: 20%;
 }
 .clientQuote .arrow {
   border: none;
@@ -593,4 +625,101 @@ header {
 }
 .clientQuote h2::after {
   width: 10%;
+}
+
+footer {
+  background-color: #2E2E2E;
+}
+footer .footerWrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+footer .footerFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 75px 0;
+}
+footer .footerFlexContainer div {
+  width: calc(33.3333333333% - 100px);
+}
+footer .recentPosts li:last-child {
+  margin-top: 10px;
+}
+footer a:hover,
+footer a:focus {
+  opacity: 0.6;
+}
+footer p:not(:last-child):not(.subscribeNow p),
+footer li:not(:last-child):not(.subscribeNow li) {
+  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+  padding: 14px 0;
+}
+footer span {
+  display: block;
+}
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+  padding: 20px 0 30px;
+}
+footer input,
+footer button {
+  border: none;
+  padding: 13px 20px;
+}
+footer input#email {
+  background-color: rgba(153, 153, 153, 0.4);
+  min-width: 75%;
+  outline: none;
+}
+footer input#email:hover, footer input#email:focus {
+  -webkit-box-shadow: inset 0 0 0 1px #F6F6F6;
+          box-shadow: inset 0 0 0 1px #F6F6F6;
+}
+footer input::-webkit-input-placeholder {
+  color: #F6F6F6;
+}
+footer input::-moz-placeholder {
+  color: #F6F6F6;
+}
+footer input:-ms-input-placeholder {
+  color: #F6F6F6;
+}
+footer input::-ms-input-placeholder {
+  color: #F6F6F6;
+}
+footer input::placeholder {
+  color: #F6F6F6;
+}
+footer button {
+  color: #F6F6F6;
+  background-color: #64A604;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer button:hover, footer button:focus {
+  color: #64A604;
+  background-color: #F6F6F6;
+}
+footer .brandsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+footer .brandsList li:not(:last-child) {
+  margin-right: 20px;
+}
+footer .fa-brands {
+  color: #F6F6F6;
+}
+footer .fa-brands:hover, footer .fa-brands:focus {
+  opacity: 0.6;
 }

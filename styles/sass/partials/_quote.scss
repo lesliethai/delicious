@@ -8,7 +8,7 @@
     &::after {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
-        color: $quaternary; 
+        color: rgba($color: $quaternary, $alpha: 0.8);
         @include fontSize(75); 
         position: absolute;
     }
@@ -16,13 +16,13 @@
     &::before {
         content: '\f10d';
         top: 40%;
-        left: 23%; 
+        left: 20%;
     }
 
     &::after {
         content: '\f10e';
         bottom: 47%;
-        right: 23%;
+        right: 20%;
     }
 
     .arrow {

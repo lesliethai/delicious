@@ -1,0 +1,97 @@
+footer {
+    background-color: $tertiary;
+
+    .footerWrapper {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+    } 
+
+    .footerFlexContainer {
+        display: flex; 
+        justify-content: space-between;
+        padding: 75px 0;
+
+        div {
+            width: calc((100% / 3) - 100px);
+        }
+    }
+
+    .recentPosts li:last-child {
+            margin-top: 10px;
+    } 
+
+    a:hover,
+    a:focus {
+        opacity: 0.6;
+    }
+
+    p:not(:last-child):not(.subscribeNow p),
+    li:not(:last-child):not(.subscribeNow li) { 
+        border-bottom: 1px solid rgba($color: $primary, $alpha: 0.3);
+        padding: 14px 0;
+    }
+
+    span {
+        display: block; 
+    }
+
+    form {
+        display: flex;
+        border-bottom: 1px solid rgba($color: $primary, $alpha: 0.3);
+        padding: 20px 0 30px;
+    }
+    
+    input,
+    button { 
+        border: none;
+        padding: 13px 20px;
+    }
+
+    input { 
+        &#email {
+            background-color: rgba($color: $primary, $alpha: 0.4);
+            min-width: 75%; 
+            outline: none;
+
+            &:hover,
+            &:focus {
+                box-shadow: inset 0 0 0 1px $quaternary;
+            }
+        }
+
+        &::placeholder {
+            color: $quaternary;  
+        }
+    }
+
+    button {
+        color: $quaternary;
+        background-color: $secondary;
+        transition: 0.3s;
+        
+        &:hover,
+        &:focus {
+            color: $secondary;
+            background-color: $quaternary;
+        }
+    }
+
+    .brandsList {
+        display: flex;
+        margin-top: 20px; 
+
+        li:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    
+    .fa-brands {
+        color: $quaternary;
+
+        &:hover,
+        &:focus {
+            opacity: 0.6;
+        }
+    }
+}

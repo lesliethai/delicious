@@ -27,25 +27,23 @@
 }
 
 .recipesListContent {
-    background-color: rgba($color: $primary, $alpha: 0.2);
-    padding: 0 120px; 
+    background-color: rgba($color: $primary, $alpha: 0.2); 
 }
-.recipeItemContainer { 
-    padding: 25px 0; 
+.recipeItemContainer {  
+    padding: 30px 50px 30px 100px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; 
 
     .item {
         width: 45%;
         
         &:not(.itemNoMargin) {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
         h3 {
             text-align: left; 
             margin-bottom: 10px;
-            @include fontSize(25);
         }
 
         p {
@@ -61,9 +59,9 @@
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         color: $tertiary; 
-        @include fontSize(40);
+        @include fontSize(35);
         position: absolute; 
-        left: -50px; 
+        left: -40px; 
         top: 3px; 
     }
 
@@ -80,7 +78,7 @@
     }
 
     .item4::before {
-        content: "\f000";
+        content: "\f57b";
     }
 
     .item5::before {

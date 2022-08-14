@@ -118,24 +118,24 @@
         <section class="clientQuote">
             <div class="wrapper">
                 <h2>Hungry Clients</h2>
-                <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion.</p>
+                <p class="quote">Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion.</p>
                 <div class="arrows">
                     <button class="leftArrow arrow"><i class="fa-solid fa-angle-left fa-2xl"></i></button>
-                    <button class="rightArrow arrow"><i class="fa-solid fa-angle-right fa-2xl"></i></button> 
+                    <button class="rightArrow arrow"><i class="fa-solid fa-angle-right fa-2xl"></i></button>
                 </div>
             </div><!--END .wrapper-->
         </section> <!-- END .clientQuote section-->
     </main>
 
     <footer>
-        <div class="wrapper">
+        <div class="footerWrapper">
             <div class="footerFlexContainer">
                 <div class="footerDelicious">
                     <h4>Delicious</h4>
                     <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</p>
                     <p>A delicious restaurant <span>Toronto, Ontario</span></p>
-                    <p>yum@food.com</p>
-                    <p>+1 234 567 8910</p>
+                    <p><a href="mailto:yum@food.com">yum@food.com</a></p>
+                    <p>+1 234 567 8910</p> 
                 </div> <!--END .footerDelicious-->
 
                 <div class="recentPosts">
@@ -166,15 +166,22 @@
                     <h5>Subscribe Now</h5>
                     <p>Get all of our newest recipes immediately in your inbox!</p>
 
-                    <form action="#" method="#" class="subscribe">
+                    <form action="#" method="#" class="subscribe" name="subscribe">
                         <label for="email" class="srOnly">Email</label>
-                        <input type="email" class="email" name="email" placeholder="Enter your email"> 
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <button class="submit"><i class="fa-solid fa-right-long fa-xl"></i></button>
                     </form>
 
-                    <ul>
-                        <li>facebook icon</li>
-                        <li>twitter icon</li>
-                        <li>instagram icon</li>
+                    <ul class="brandsList"> 
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                        </li> 
+                        <li>
+                            <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a> 
+                        </li>  
                     </ul>
                 </div>
             </div>
