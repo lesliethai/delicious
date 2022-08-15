@@ -15,7 +15,7 @@ h1 {
 
 h2, h3, h4 { 
     font-family: 'Raleway', sans-serif;
-    @include fontSize(20);
+    @include fontSize(33);
     font-weight: 700; 
     letter-spacing: 0.5px;
     text-transform: uppercase; 
@@ -34,11 +34,16 @@ p {
 
 .counter p {
     font-family: 'Raleway', sans-serif; 
-    font-weight: 700; 
+    font-weight: 700;  
     @include fontSize(20);
 }
 
-.linkButton {
+.recipesListContent h3 {
+    @include fontSize(20); 
+}
+
+.linkButton,
+.slideMenu button {
     text-transform: uppercase; 
     font-weight: 700; 
     letter-spacing: 0.5px; 

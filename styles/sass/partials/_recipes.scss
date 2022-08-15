@@ -5,7 +5,6 @@
 
 .popularRecipesContent,
 .recipesListContent { 
-    width: 50%;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
@@ -17,6 +16,11 @@
     }
 }
 
+.recipesBg, 
+.popularRecipesContent {
+    width: 50%; 
+}
+
 .popularRecipesContent {
     padding: 0 145px;
 }
@@ -25,15 +29,19 @@
 .recipesListImg {
     width: 50%;
 }
-
-.recipesListContent {
-    background-color: rgba($color: $primary, $alpha: 0.2); 
+ 
+.recipesBg {
+    background-color: rgba($color: $primary, $alpha: 0.2);
+    display: flex;
+    align-items: center; 
 }
-.recipeItemContainer {  
-    padding: 30px 50px 30px 100px;
+
+.recipeItemContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
+    align-items: center;
+    margin: 0 50px 0 100px;
 
     .item {
         width: 45%;
@@ -56,6 +64,7 @@
     } 
 
     li::before { 
+        content: "";
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         color: $tertiary; 
