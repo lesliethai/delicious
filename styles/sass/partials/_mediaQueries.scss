@@ -5,19 +5,22 @@
         }
     } 
 
-    .popularRecipesContent {
-        padding: 0 30px; 
-    }
+    .recipes {
 
-    .recipeItemContainer {
-        margin-right: 0;
-        margin-left: 50px;
+        .popularRecipesContent {
+            padding: 0 30px; 
+        }
 
-        .item {
-            width: 45%; 
+        .recipeItemContainer {
+            margin-right: 0;
+            margin-left: 50px;
 
-            &:not(.itemnoMargin) {
-                margin-bottom: 10px;
+            .item {
+                width: 45%; 
+
+                &:not(.itemnoMargin) {
+                    margin-bottom: 10px;
+                }
             }
         }
     }
@@ -39,6 +42,7 @@
         }
     }
 
+
     .quote {
         @include fontSize(20); 
     }
@@ -53,6 +57,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        z-index: 50;
 
         ul {
             margin-top: 100px;
@@ -83,7 +88,7 @@
             right: 0;
             top: 25px;
             background-color: transparent;
-            padding: 20px 40px;
+            padding: 20px 30px;
             border: none;
             @include fontSize(25);
             transition: 0.3s;
@@ -111,53 +116,56 @@
         }
     }
     
-    .recipesList {
-        flex-direction: column; 
-        align-items: center;
-    }
+    .recipes {
 
-    .popularRecipes {
-        flex-direction: column-reverse; 
-        align-items: center; 
-        margin-top: 100px; 
-    } 
+        .recipesList {
+            flex-direction: column; 
+            align-items: center;
+        }
 
-    .popularRecipesContent,
-    .recipesListContent {
-        max-width: 1000px;
-        width: 50%; 
-        margin: 0 auto; 
+        .popularRecipes {
+            flex-direction: column-reverse; 
+            align-items: center; 
+            margin-top: 100px; 
+        } 
 
-        a {
+        .popularRecipesContent,
+        .recipesListContent {
+            max-width: 1000px;
+            width: 50%; 
+            margin: 0 auto; 
+
+            a {
+                margin-bottom: 50px; 
+            }
+        }
+
+        .popularRecipesImg,
+        .recipesListImg {
+            width: 70%;
+        }
+
+        .popularRecipesContent {
+            padding: 0;
+            margin-top: 35px;
+        }
+
+        .recipesListContent {
+            margin-top: 50px;
             margin-bottom: 50px; 
         }
-    }
 
-    .popularRecipesImg,
-    .recipesListImg {
-        width: 70%;
-    }
+        .recipeItemContainer {
+            margin: 0; 
 
-    .popularRecipesContent {
-        padding: 0;
-        margin-top: 35px;
-    }
-
-    .recipesListContent {
-        margin-top: 50px;
-        margin-bottom: 50px; 
-    }
-
-    .recipeItemContainer {
-        margin: 0; 
-
-        .item {
-            width: 48%;
+            .item {
+                width: 48%;
+            }
         }
-    }
 
-    .recipesBg {
-        width: 100%; 
+        .recipesBg {
+            width: 100%; 
+        }
     }
 
     .clientQuote {
@@ -181,6 +189,96 @@
     }
 }
 
-// @media (max-width: 750px) {
+@media (max-width: 750px) { 
+    
+    .recipes{
+        .popularRecipesContent {
+            width: 90%;
+        }
 
-// } 
+        .recipesBg {
+            width: 100%;
+        }
+
+        .popularRecipesImg,
+        .recipesListImg {
+            width: 100%;
+        }
+
+        .recipeItemContainer {
+            .item {
+                width: 100%; 
+
+                &:not(.itemNoMargin) {
+                    margin-bottom: 35px;
+                }
+            }
+        }
+
+        .popularRecipesContent,
+        .recipesListContent {
+            width: 80%; 
+            margin-right: 20px; 
+        } 
+    } 
+
+    .restaurants {
+        margin: 100px 0 50px;
+
+        .wrapper {
+            width: 90%;
+        }
+    }
+
+    .imgGallery {
+        li {
+            width: calc(100% / 2);
+        }
+    }
+
+    .clientQuote {
+        padding: 75px 0 75px; 
+
+        .wrapper {
+            width: 90%; 
+        }
+
+        &::before {
+            top: 25%; 
+            left: 5%; 
+        }
+
+        &::after {
+            bottom: 25%; 
+            right: 5%; 
+        }
+
+        h2 {
+            margin-bottom: 50px; 
+        }
+    }
+
+    footer {
+        
+        .footerFlexContainer {
+            flex-direction: column;
+            text-align: center; 
+            
+            div {
+                width: 100%; 
+            }
+        }
+
+        h5 {
+            margin-top: 75px;
+        }
+
+        .brandsList {
+            justify-content: center;
+        }
+
+        form {
+            justify-content: center;
+        }
+    }
+}

@@ -1,100 +1,103 @@
-.popularRecipes,
-.recipesList {
-    display: flex;
-}
+.recipes {
 
-.popularRecipesContent,
-.recipesListContent { 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    text-align: center; 
-
-    a {
-        margin-top: 50px; 
+    .popularRecipes,
+    .recipesList {
+        display: flex;
     }
-}
 
-.recipesBg, 
-.popularRecipesContent {
-    width: 50%; 
-}
+    .popularRecipesContent,
+    .recipesListContent { 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
 
-.popularRecipesContent {
-    padding: 0 145px;
-}
-
-.popularRecipesImg,
-.recipesListImg {
-    width: 50%;
-}
-
-.recipesBg {
-    background-color: rgba($color: $primary, $alpha: 0.2);
-    display: flex;
-    align-items: center; 
-}
-
-.recipeItemContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    align-items: center;
-    margin: 0 50px 0 100px;
-
-    .item {
-        width: 45%;
-        
-        &:not(.itemNoMargin) {
-            margin-bottom: 30px;
-        }
-        h3 {
-            text-align: left; 
-            margin-bottom: 10px;
-        }
-
-        p {
-            text-align: left; 
+        a {
+            margin-top: 50px; 
         }
     }
 
-    li {
-        position: relative;
-    } 
-
-    li::before { 
-        content: "";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        color: $tertiary; 
-        @include fontSize(35);
-        position: absolute; 
-        left: -40px; 
-        top: 3px; 
+    .recipesBg, 
+    .popularRecipesContent {
+        width: 50%; 
     }
 
-    .item1::before {
-        content: "\f094";
+    .popularRecipesContent {
+        padding: 0 145px;
     }
 
-    .item2::before {
-        content: "\f2e7"; 
+    .popularRecipesImg,
+    .recipesListImg {
+        width: 50%;
     }
 
-    .item3::before {
-        content: "\f0f4";
+    .recipesBg {
+        background-color: rgba($color: $primary, $alpha: 0.2);
+        display: flex;
+        align-items: center; 
     }
 
-    .item4::before {
-        content: "\f57b";
-    }
+    .recipeItemContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        align-items: center;
+        margin: 0 50px 0 100px;
 
-    .item5::before {
-        content: "\f06c";
-    }
+        .item {
+            width: 45%;
+            
+            &:not(.itemNoMargin) {
+                margin-bottom: 30px;
+            }
+            h3 {
+                text-align: left; 
+                margin-bottom: 10px;
+            }
 
-    .item6::before {
-        content: "\f2e5";
+            p {
+                text-align: left; 
+            }
+        }
+
+        li {
+            position: relative;
+        } 
+
+        li::before { 
+            content: "";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: $tertiary; 
+            @include fontSize(35);
+            position: absolute; 
+            left: -40px; 
+            top: 3px; 
+        }
+
+        .item1::before {
+            content: "\f094";
+        }
+
+        .item2::before {
+            content: "\f2e7"; 
+        }
+
+        .item3::before {
+            content: "\f0f4";
+        }
+
+        .item4::before {
+            content: "\f57b";
+        }
+
+        .item5::before {
+            content: "\f06c";
+        }
+
+        .item6::before {
+            content: "\f2e5";
+        }
     }
 }
