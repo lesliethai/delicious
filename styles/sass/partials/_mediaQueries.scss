@@ -45,15 +45,72 @@
 }
 
 @media (max-width: 1110px) {
-    .navBar {
-        flex-direction: column;
-
-        ul {
-            margin: 0 auto; 
-            margin-top: 25px; 
-        }
+    .headerNav {
+        display: none;
     }
 
+    .slideMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul {
+            margin-top: 100px;
+        }
+
+        li {
+            list-style: none;
+            width: 100%;
+            padding: 10px 30px;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba($color: $secondary, $alpha: 0.2);
+            }
+        }
+
+        a {
+            display: inline-block;
+            width: 100%;
+        }
+
+        button {
+            position: fixed;
+            right: 0;
+            top: 25px;
+            background-color: transparent;
+            padding: 20px 40px;
+            border: none;
+            @include fontSize(25);
+            transition: 0.3s;
+
+            &:hover,
+            &:focus {
+                background-color: $secondary;
+                color: $quaternary;
+            }
+        }
+
+        .slideOut {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 30;
+            height: 80vh;
+            width: 300px;
+            background-color: $quaternary;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    
     .recipesList {
         flex-direction: column; 
         align-items: center;

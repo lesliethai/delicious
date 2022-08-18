@@ -401,18 +401,6 @@ h2::after {
   color: #64A604;
 }
 
-.slideOut {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 30;
-  right: -999px;
-}
-
-.visible {
-  display: visible;
-}
-
 .displayNone {
   display: none;
 }
@@ -425,8 +413,7 @@ header {
   padding: 40px;
 }
 
-.navBar,
-.slideMenu {
+.navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,35 +421,32 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.navBar ul,
-.slideMenu ul {
+.navBar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.navBar li:not(:last-child),
-.slideMenu li:not(:last-child) {
+.navBar li:not(:last-child) {
   margin-right: 30px;
 }
-.navBar a,
-.slideMenu a {
+.navBar a {
   text-transform: uppercase;
   font-weight: 700;
   color: #2E2E2E;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.navBar a:hover, .navBar a:focus,
-.slideMenu a:hover,
-.slideMenu a:focus {
+.navBar a:hover, .navBar a:focus {
   opacity: 0.6;
 }
-.navBar .fa-bag-shopping,
-.slideMenu .fa-bag-shopping {
+.navBar h1:hover,
+.navBar h1:focus {
+  color: #64A604;
+}
+.navBar .fa-bag-shopping {
   position: relative;
 }
-.navBar .counter,
-.slideMenu .counter {
+.navBar .counter {
   background-color: #64A604;
   display: inline-block;
   height: 25px;
@@ -472,8 +456,7 @@ header {
   bottom: -10px;
   left: -10px;
 }
-.navBar .counter p,
-.slideMenu .counter p {
+.navBar .counter p {
   color: #F6F6F6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -487,36 +470,7 @@ header {
 }
 
 .slideMenu {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.slideMenu li {
-  list-style: none;
-}
-.slideMenu a {
-  padding: 10px 30px;
-  display: inline-block;
-  width: 100%;
-  border: 1px solid black;
-}
-.slideMenu button {
-  position: fixed;
-  right: 0;
-  top: 25px;
-  background-color: transparent;
-  padding: 20px 40px;
-  border: none;
-  font-size: 20px;
-  font-size: 1rem;
-}
-.slideMenu button:hover, .slideMenu button:focus {
-  background-color: #2E2E2E;
-  color: #F6F6F6;
+  display: none;
 }
 
 .popularRecipes,
@@ -839,15 +793,72 @@ footer .fa-brands:hover, footer .fa-brands:focus {
   }
 }
 @media (max-width: 1110px) {
-  .navBar {
+  .headerNav {
+    display: none;
+  }
+  .slideMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .navBar ul {
-    margin: 0 auto;
-    margin-top: 25px;
+  .slideMenu ul {
+    margin-top: 100px;
+  }
+  .slideMenu li {
+    list-style: none;
+    width: 100%;
+    padding: 10px 30px;
+  }
+  .slideMenu li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .slideMenu li:hover, .slideMenu li:focus {
+    background-color: rgba(100, 166, 4, 0.2);
+  }
+  .slideMenu a {
+    display: inline-block;
+    width: 100%;
+  }
+  .slideMenu button {
+    position: fixed;
+    right: 0;
+    top: 25px;
+    background-color: transparent;
+    padding: 20px 40px;
+    border: none;
+    font-size: 25px;
+    font-size: 1.25rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .slideMenu button:hover, .slideMenu button:focus {
+    background-color: #64A604;
+    color: #F6F6F6;
+  }
+  .slideMenu .slideOut {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    height: 80vh;
+    width: 300px;
+    background-color: #F6F6F6;
+  }
+  .slideMenu .slideOut ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .recipesList {
     -webkit-box-orient: vertical;

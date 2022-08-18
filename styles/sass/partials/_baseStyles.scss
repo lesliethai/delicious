@@ -53,18 +53,6 @@ h2 {
     color: $secondary;
 }
 
-.slideOut {
-    position: fixed;
-    top: 0;  
-    right: 0; 
-    z-index: 30;
-    right: -999px;
-}
-
-.visible {
-    display: visible; 
-}
-
 .displayNone {
     display: none;
 }

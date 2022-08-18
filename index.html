@@ -21,32 +21,9 @@
                 <h1>Delicious</h1>
             </a>
 
-            <ul>
-                <li><a href="#"><span class="homeSpan">Home</span></a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Nutrition</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-bag-shopping fa-xl"></i>
-                    <div class="counter">
-                        <p>2</p>
-                    </div>
-                    </a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-magnifying-glass fa-lg"></i> 
-                </li>
-            </ul>
-            <div class="slideMenu displayNone">
-                <button id="menuOpen">
-                    <i class="fa-solid fa-bars"></i> Menu
-                </button> 
-            
-                <nav class="slideOut">
-                    <li><a href="#">Home</a></li>
+            <div class="headerNav">
+                <ul>
+                    <li><a href="#"><span class="homeSpan">Home</span></a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Recipes</a></li>
                     <li><a href="#">Nutrition</a></li>
@@ -55,15 +32,47 @@
                     <li><a href="#contact">Contact</a></li>
                     <li>
                         <a href="#"><i class="fa-solid fa-bag-shopping fa-xl"></i>
-                            <div class="counter">
-                                <p>2</p>
-                            </div>
+                        <div class="counter">
+                            <p>2</p>
+                        </div>
                         </a>
                     </li>
                     <li>
-                        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                        <i class="fa-solid fa-magnifying-glass fa-lg"></i> 
                     </li>
-                </nav>
+                </ul>
+            </div>
+
+            <div class="slideMenu">
+                <button class="menuOpen">
+                    <i class="fa-solid fa-bars"></i> Menu
+                </button>
+            
+                <div class="slideOut displayNone">
+                    <button class="menuClose">X
+                    </button>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="#">Nutrition</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-bag-shopping fa-xl"></i>
+                                    <div class="counter">
+                                        <p>2</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                            </li>
+                        </ul> 
+                    </nav>
+                </div><!--END .slideout-->
             </div> <!--END .slideMenu-->
         </nav> <!--END .navBar-->
     </header> <!--END header-->
@@ -215,5 +224,7 @@
             </div>
         </div>
     </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

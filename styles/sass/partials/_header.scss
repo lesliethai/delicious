@@ -6,8 +6,7 @@ header {
     padding: 40px;
 } 
 
-.navBar,
-.slideMenu {
+.navBar {
     display: flex;
     justify-content: space-between;
 
@@ -19,7 +18,6 @@ header {
         margin-right: 30px;
     }
 
-
     a {
         text-transform: uppercase;
         font-weight: 700;
@@ -30,6 +28,11 @@ header {
         &:focus {
             opacity: 0.6;
         }
+    }
+
+    h1:hover,
+    h1:focus {
+        color: $secondary;
     }
 
     .fa-bag-shopping {
@@ -56,35 +59,5 @@ header {
 }
 
 .slideMenu {
-    flex-direction: column; 
-    align-items: center; 
-
-    li {
-        list-style: none;
-    }
-
-    a {
-        padding: 10px 30px;
-        display: inline-block; 
-        width: 100%; 
-        border: 1px solid black;
-    }
-
-    button {
-        position: fixed;
-        right: 0; 
-        top: 25px;  
-        background-color: transparent; 
-        padding: 20px 40px;
-        border: none; 
-        @include fontSize(20); 
-        transition: 0.3s; 
-
-        &:hover,
-        &:focus {
-            background-color: ($color: $secondary, $alpha: 0.5); 
-            color: $quaternary;
-            color: red;
-        }
-    }
+    display: none; 
 }
