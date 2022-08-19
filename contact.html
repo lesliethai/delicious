@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/c80c86b410.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#mainContent" class="skipLink">Skip to the main content.</a>
+
+    <header class="contactHeader">
+        <nav class="navBar">
+            <a href="#" class="logo">
+                <h1>Delicious</h1>
+            </a>
+    
+            <div class="headerNav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Nutrition</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="./contact.html"><span class="headerSpan">Contact</span></a></li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-bag-shopping fa-xl"></i>
+                            <div class="counter">
+                                <p>2</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="slideMenu">
+                <button class="menuOpen">
+                    <i class="fa-solid fa-bars"></i> Menu
+                </button>
+    
+                <div class="slideOut displayNone">
+                    <button class="menuClose">X
+                    </button>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="#">Nutrition</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-bag-shopping fa-xl"></i>
+                                    <div class="counter">
+                                        <p>2</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                            </li>
+                        </ul>
+                    </nav>
+                </div><!--END .slideout-->
+            </div><!--END .slideMenu-->
+        </nav><!--END .navBar-->
+    </header><!--END header-->
+
+    <main>
+        <section class="contactSection">
+            <div class="wrapper">
+                <section class="contactForm">
+                    <form action="#" method="#" class="contactForm">
+                        <div class="nameEmailFlexContainer">
+                            <label for="name" class="srOnly">Your Name</label>
+                            <input type="text" id="name" placeholder="Your Name">
+                            
+                            <label for="email" class="srOnly">Your Email</label>
+                            <input type="email" id="email" placeholder="Your Email">
+                        </div>
+
+                        <label for="subject" class="srOnly">Subject</label>
+                        <input type="text" id="subject" placeholder="Subject">
+
+                        <label for="message" class="srOnly">Message</label>
+                        <input type="text" id="message" placeholder="Message">
+
+                        <button class="sendMsgBtn">Send Message</button>
+
+                    </form>
+                </section>
+
+                <section class="contactDetails">
+                    <div class="contactDescription">
+                        <h2>Contact Details</h2>
+                        <p>Beetroot water spinach okra water chest-nut ricebevan pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale.</p>
+                    </div><!--END .contactDescription-->
+                    <div class="workingHours">
+                        <h3>Working Hours</h3>
+                        <p>Mon - Fri: 08:00 am - 05:30pm</p>
+                        <p>Not working on Saturday and Sunday!</p>
+                    </div>
+                    <div class="contactInfo">
+                        <h3>Contact Info</h3>
+                        <p>A delicious restaurant <span>Toronto, Ontario</span></p>
+                        <p><a href="mailto:yum@food.com">yum@food.com</a></p>
+                        <p>+1 234 567 8910</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="contactBottomImg">
+            <img src="./assets/contact-2.jpeg" alt="Two halves of a dragonfruit displayed on a light gray plate.">
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerWrapper">
+            <div class="footerFlexContainer">
+                <div class="footerDelicious">
+                    <h4>Delicious</h4>
+                    <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</p>
+                    <p>A delicious restaurant <span>Toronto, Ontario</span></p>
+                    <p><a href="mailto:yum@food.com">yum@food.com</a></p>
+                    <p>+1 234 567 8910</p>
+                </div><!--END .footerDelicious-->
+    
+                <div class="recentPosts">
+                    <h5>Recent Posts</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Beetroot water spinach okra water</a>
+                        </li>
+                        <li>
+                            <a href="#">Chestnut ricebean pea catsear courgette</a>
+                        </li>
+                        <li>
+                            <a href="#">Summer purslane spinach arugula pea</a>
+                        </li>
+                        <li>
+                            <a href="#">Tatsoi aubergine spring onion bush</a>
+                        </li>
+                        <li>
+                            <a href="#">Tomato kale radicchio turnip chicory</a>
+                        </li>
+                        <li>
+                            <a href="#">Salsify pea sprouts fava bean</a>
+                        </li>
+                    </ul>
+                </div><!-- END .recentPosts-->
+    
+                <div class="subscribeNow">
+                    <h5>Subscribe Now</h5>
+                    <p>Get all of our newest recipes immediately in your inbox!</p>
+    
+                    <form action="#" method="#" class="subscribe" name="subscribe">
+                        <label for="email" class="srOnly">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <button class="submit"><i class="fa-solid fa-right-long fa-xl"></i></button>
+                    </form>
+    
+                    <ul class="brandsList">
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                        </li>
+                    </ul>
+                </div><!--END .subscribeNow-->
+            </div><!--END .footerFlexContainer-->
+        </div><!--END .footerWrapper-->
+        <div class="copyright">
+            <div class="footerWrapper">
+                <p>Copyrights © 2015 by <span class="polar">Polar</span>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

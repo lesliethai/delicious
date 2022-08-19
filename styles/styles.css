@@ -347,6 +347,9 @@ footer button {
   font-size: 18px;
   font-size: 0.9rem;
 }
+footer .copyright {
+  font-family: "Raleway", sans-serif;
+}
 
 .wrapper {
   max-width: 1000px;
@@ -397,7 +400,7 @@ h2::after {
   border-bottom: 3px solid #64A604;
 }
 
-.homeSpan {
+.headerSpan {
   color: #64A604;
 }
 
@@ -406,11 +409,21 @@ h2::after {
 }
 
 header {
-  background: url("../assets/home-1.jpeg") no-repeat;
-  background-size: cover;
-  background-position: 50% 5%;
-  height: 100vh;
   padding: 40px;
+}
+
+.mainHeader {
+  background: url("../assets/home-1.jpeg") no-repeat;
+  background-position: 50% 5%;
+  background-size: cover;
+  height: 100vh;
+}
+
+.contactHeader {
+  background: url("../assets/contact-1.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
 }
 
 .navBar {
@@ -436,7 +449,8 @@ header {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.navBar a:hover, .navBar a:focus {
+.navBar .headerNav a:hover,
+.navBar .headerNav a:focus {
   opacity: 0.6;
 }
 .navBar h1:hover,
@@ -655,7 +669,7 @@ header {
 }
 
 footer {
-  background-color: #2E2E2E;
+  background-color: #333333;
 }
 footer .footerWrapper {
   max-width: 1200px;
@@ -750,6 +764,17 @@ footer .fa-brands {
 footer .fa-brands:hover, footer .fa-brands:focus {
   opacity: 0.6;
 }
+footer .polar {
+  text-transform: uppercase;
+  color: #64A604;
+  display: inline;
+  font-weight: 700;
+}
+footer .copyright {
+  background: #2E2E2E;
+  padding: 20px 0;
+  width: 100%;
+}
 
 @media (max-width: 1260px) {
   .navBar li:not(:last-child) {
@@ -812,7 +837,7 @@ footer .fa-brands:hover, footer .fa-brands:focus {
     padding: 10px 30px;
   }
   .slideMenu li:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .slideMenu li:hover, .slideMenu li:focus {
     background-color: rgba(100, 166, 4, 0.2);
@@ -842,7 +867,6 @@ footer .fa-brands:hover, footer .fa-brands:focus {
     top: 0;
     right: 0;
     z-index: 30;
-    height: 80vh;
     width: 300px;
     background-color: #F6F6F6;
   }
@@ -937,6 +961,8 @@ footer .fa-brands:hover, footer .fa-brands:focus {
   .recipes .popularRecipesContent,
 .recipes .recipesListContent {
     width: 80%;
+  }
+  .recipes .recipesListContent {
     margin-right: 20px;
   }
   .restaurants {
@@ -963,7 +989,7 @@ footer .fa-brands:hover, footer .fa-brands:focus {
     right: 5%;
   }
   .clientQuote h2 {
-    margin-bottom: 50px;
+    margin-bottom: 75px;
   }
   footer .footerFlexContainer {
     -webkit-box-orient: vertical;

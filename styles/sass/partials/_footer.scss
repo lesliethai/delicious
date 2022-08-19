@@ -1,5 +1,5 @@
 footer {
-    background-color: $tertiary;
+    background-color: $quinary;
 
     .footerWrapper {
         max-width: 1200px;
@@ -93,5 +93,18 @@ footer {
         &:focus {
             opacity: 0.6;
         }
+    }
+
+    .polar {
+        text-transform: uppercase;
+        color: $secondary;
+        display: inline;
+        font-weight: 700;
+    }
+
+    .copyright {
+        background: $tertiary;
+        padding: 20px 0;
+        width: 100%;
     }
 }

@@ -1,11 +1,20 @@
 header {
-    background: url("../assets/home-1.jpeg") no-repeat;
-    background-size: cover;
-    background-position: 50% 5%;
-    height: 100vh; 
     padding: 40px;
-} 
+}
 
+.mainHeader {
+    background: url("../assets/home-1.jpeg") no-repeat;
+    background-position: 50% 5%;
+    background-size: cover; 
+    height: 100vh;
+}
+
+.contactHeader {
+    background: url("../assets/contact-1.jpeg") no-repeat; 
+    background-size: cover;
+    background-position: center; 
+    height: 60vh;
+}
 .navBar {
     display: flex;
     justify-content: space-between;
@@ -23,11 +32,11 @@ header {
         font-weight: 700;
         color: $tertiary;
         transition: 0.3s; 
+    }
 
-        &:hover, 
-        &:focus {
-            opacity: 0.6;
-        }
+    .headerNav a:hover,
+    .headerNav a:focus {
+        opacity: 0.6;
     }
 
     h1:hover,
