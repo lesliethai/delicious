@@ -53,13 +53,13 @@
                     </button>
                     <nav>
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="./index.html">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Recipes</a></li>
                             <li><a href="#">Nutrition</a></li>
-                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
                             <li><a href="#">Shop</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="./contact.html"><span class="headerSpan">Contact</span></a></li>
                             <li>
                                 <a href="#"><i class="fa-solid fa-bag-shopping fa-xl"></i>
                                     <div class="counter">
@@ -77,10 +77,11 @@
         </nav><!--END .navBar-->
     </header><!--END header-->
 
-    <main>
+    <main id="#mainContent">
         <section class="contactSection">
-            <div class="wrapper">
+            <div class="contactWrapper">
                 <section class="contactForm">
+                    <h2>Drop Us a Line</h2>
                     <form action="#" method="#" class="contactForm">
                         <div class="nameEmailFlexContainer">
                             <label for="name" class="srOnly">Your Name</label>
@@ -94,22 +95,23 @@
                         <input type="text" id="subject" placeholder="Subject">
 
                         <label for="message" class="srOnly">Message</label>
-                        <input type="text" id="message" placeholder="Message">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
 
-                        <button class="sendMsgBtn">Send Message</button>
-
+                        <button class="sendMsgBtn">Send Message <i class="fa-solid fa-right-long"></i></button>
                     </form>
-                </section>
+                </section><!--END .contactForm-->
+            </div>
 
-                <section class="contactDetails">
+            <section class="contactDetails">
+                <div class="contactWrapper contactContainer">
                     <div class="contactDescription">
                         <h2>Contact Details</h2>
                         <p>Beetroot water spinach okra water chest-nut ricebevan pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale.</p>
                     </div><!--END .contactDescription-->
                     <div class="workingHours">
                         <h3>Working Hours</h3>
-                        <p>Mon - Fri: 08:00 am - 05:30pm</p>
-                        <p>Not working on Saturday and Sunday!</p>
+                        <p><span class="workingHoursDays">Mon - Fri</span>: 08:00 am - 05:30pm</p>
+                        <p class="workingHoursDisclaimer">Not working on Saturday and Sunday!</p>
                     </div>
                     <div class="contactInfo">
                         <h3>Contact Info</h3>
@@ -117,12 +119,12 @@
                         <p><a href="mailto:yum@food.com">yum@food.com</a></p>
                         <p>+1 234 567 8910</p>
                     </div>
-                </section>
-            </div>
-        </section>
+                </div>
+            </section><!--END .sectionDetails-->
+        </section><!--END .contactSection-->
         <section class="contactBottomImg">
             <img src="./assets/contact-2.jpeg" alt="Two halves of a dragonfruit displayed on a light gray plate.">
-        </section>
+        </section><!--END .contactBottomImg-->
     </main>
 
     <footer>

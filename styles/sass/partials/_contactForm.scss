@@ -1,0 +1,128 @@
+.contactSection {
+    display: flex; 
+
+    .contactWrapper {
+        max-width: 1000px;
+        width: 50%; 
+    }
+
+    .contactForm,
+    .contactForm h2 {
+        width: 80%;
+        margin-left: auto; 
+        padding-right: 15px; 
+    }
+
+    h2 {
+        margin-top: 60px;
+        margin-bottom: 30px; 
+    }
+
+    h3 {
+        margin-bottom: 15px;
+    }
+    
+    .contactDetails {
+        width: 50%;
+        flex: 1;
+    }
+
+    .contactWrapper {
+        flex: 2; 
+    }
+
+    .contactContainer {
+        padding-left: 30px;
+
+        .contactDescription {
+            margin-bottom: 55px;
+        }
+    }
+
+    .workingHoursDisclaimer {
+        font-style: italic;
+        margin-bottom: 55px;
+    }
+
+    .contactInfo {
+        margin-bottom: 75px;
+
+        span {
+            display: block;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: rgba($color: $tertiary, $alpha: 0.6);
+        }
+    }
+
+    .workingHoursDays {
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+    }
+
+    .nameEmailFlexContainer {
+        display: flex;
+        
+
+        input:not(:last-child) { 
+            margin-right: 15px;
+        }
+
+        input {
+            flex: 1; 
+        }
+    }
+
+    input,
+    textarea {
+        font-family: 'Lora', serif;
+        @include fontSize(16);
+        width: 100%; 
+        border: none; 
+        background-color: rgba($color: $primary, $alpha: 0.1); 
+        padding: 10px; 
+        margin-bottom: 20px;
+        outline: none;
+
+        &::placeholder {
+            color: $tertiary;
+        }
+
+        &:hover,
+        &:focus {
+            box-shadow: inset 0 0 0 1px $secondary;
+        }
+    } 
+
+    textarea {
+        resize: none;
+    }
+
+    .contactDetails {
+        background-color: rgba($color: $primary, $alpha: 0.1); 
+    }
+
+    .sendMsgBtn {
+        border: none;
+        background-color: transparent;
+        color: $secondary;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: 1px solid transparent; 
+        padding: 5px;
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+            border: 1px solid $secondary;
+            border-radius: 5px;
+            opacity: 0.6;
+        }
+    }
+}
