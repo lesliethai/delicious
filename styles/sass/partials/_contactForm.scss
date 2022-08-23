@@ -3,7 +3,7 @@
 
     .contactWrapper {
         max-width: 1000px;
-        width: 50%; 
+        width: 55%;
     }
 
     .contactForm,
@@ -14,16 +14,17 @@
     }
 
     h2 {
-        margin-top: 60px;
-        margin-bottom: 30px; 
+        @include fontSize(30);
+        margin-top: 100px;
+        margin-bottom: 40px;
     }
 
     h3 {
+        @include fontSize(28);
         margin-bottom: 15px;
     }
     
     .contactDetails {
-        width: 50%;
         flex: 1;
     }
 
@@ -125,4 +126,8 @@
             opacity: 0.6;
         }
     }
+}
+
+.contactBottomImg img {
+    object-fit: cover; 
 }

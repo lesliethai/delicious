@@ -87,16 +87,18 @@
             position: fixed;
             right: 0;
             top: 25px;
-            background-color: transparent; 
-            padding: 20px 30px;
-            border: none;
+            background-color: rgba($color: $secondary, $alpha: 0.8);
+            color: $quaternary;
+            padding: 10px 15px;
+            border: 1px solid transparent;
             @include fontSize(25);
             transition: 0.3s;
 
             &:hover,
             &:focus {
-                background-color: $secondary;
-                color: $quaternary;
+                background-color: $quaternary;
+                color: $secondary;
+                border: 1px solid $secondary;
             }
         }
 
@@ -179,6 +181,17 @@
         }
     }
 
+    .contactSection {
+        .contactWrapper {
+            width: 70%;
+        }
+
+        .contactForm,
+        .contactForm h2 {
+            width: 90%;
+        }
+    }
+
     footer {
         .footerFlexContainer {
             div {
@@ -258,6 +271,51 @@
         h2 {
             margin-bottom: 75px; 
         }
+    }
+
+    .contactSection {
+        flex-direction: column;
+
+        h2 {
+            margin-top: 50px;
+        }
+        
+        .contactDetails {
+            margin: 0 auto;
+        }
+
+        .contactWrapper {
+            max-width: 1200px;
+            width: 90%;
+            padding: 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .nameEmailFlexContainer {
+            display: block;
+        }
+        
+        .contactInfo {
+            margin-bottom: 50px;
+            
+            p:last-child {
+                margin-bottom: 0
+            }
+        }
+        .contactForm,
+        .contactForm h2 {
+            width: 100%;
+            padding: 0;
+        }
+
+        .sendMsgBtn {
+            margin-bottom: 50px; 
+        }
+    }
+
+    .contactBottomImg img {
+        min-height: 20vh;
     }
 
     footer {
