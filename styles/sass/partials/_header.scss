@@ -15,6 +15,13 @@ header {
     background-position: center; 
     height: 65vh;
 }
+
+.blogHeader {
+    background: url("../assets/blog-1.jpeg") no-repeat;
+    height: 63vh;
+    background-position: center; 
+}
+
 .navBar {
     display: flex;
     justify-content: space-between;

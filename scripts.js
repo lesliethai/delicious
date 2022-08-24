@@ -4,7 +4,6 @@ const slideOut = document.querySelector(".slideOut");
 const menuClose = document.querySelector(".menuClose");
 
 app.init = () => {
-    console.log('test');
 
     $('.menuOpen').on('click', function(event) {
         event.preventDefault();
