@@ -315,6 +315,23 @@ p {
   letter-spacing: 0.6px;
 }
 
+.blogContainer a {
+  font-family: "Lora", serif;
+  color: rgba(46, 46, 46, 0.6);
+  font-size: 16px;
+  font-size: 0.8rem;
+}
+
+.tags span {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  color: #2E2E2E;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 footer h5 {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -810,6 +827,44 @@ header {
 .contactBottomImg img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.blogContainer {
+  margin-top: 150px;
+}
+.blogContainer h2 {
+  margin-bottom: 5px;
+}
+.blogContainer a:hover,
+.blogContainer a:focus {
+  color: #64A604;
+}
+
+.recipesBlog {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+}
+.recipesBlog p:not(last-child) {
+  margin-bottom: 25px;
+}
+
+.tags {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+}
+.tags .recipesTag {
+  margin-bottom: 25px;
+}
+.tags .fa-brands {
+  margin: 0 10px;
+}
+.tags .fa-brands:hover, .tags .fa-brands:focus {
+  color: #64A604;
+}
+.tags .shareSpan {
+  margin-right: 10px;
 }
 
 footer {

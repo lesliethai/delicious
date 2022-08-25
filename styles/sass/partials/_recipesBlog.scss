@@ -1,0 +1,46 @@
+.blogContainer {
+    margin-top: 150px;
+
+    h2 {
+        margin-bottom: 5px; 
+    }
+
+    a:hover,
+    a:focus {
+        color: $secondary;
+    }
+}
+
+.recipesBlog {
+    padding-bottom: 25px; 
+    margin-bottom: 25px; 
+    border-bottom: 1px solid rgba($color: $primary, $alpha: 0.4);
+
+    p:not(last-child) {
+        margin-bottom: 25px; 
+    }
+}
+
+.tags {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba($color: $primary, $alpha: 0.4); 
+
+    .recipesTag {
+        margin-bottom: 25px; 
+    }
+
+    .fa-brands {
+        margin: 0 10px; 
+
+        &:hover,
+        &:focus {
+            color: $secondary; 
+        }
+    }
+
+    .shareSpan {
+        margin-right: 10px; 
+    }
+
+}
