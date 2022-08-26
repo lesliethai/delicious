@@ -57,14 +57,18 @@ p {
     letter-spacing: 0.6px; 
 }
 
-.blogContainer a { 
-    font-family: 'Lora', serif; 
+.blogContainer {
+    a { 
+    font-family: 'Raleway', sans-serif;
     color: rgba($color: $tertiary, $alpha: 0.6); 
     @include fontSize(16);
-}
+    }
 
-.tags {
-    span {
+    .tags a {
+        font-family: 'Lora', serif;
+    }
+
+    .blogHead {
         font-family: 'Raleway', sans-serif;
         text-transform: uppercase;
         color: $tertiary;

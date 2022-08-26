@@ -316,13 +316,15 @@ p {
 }
 
 .blogContainer a {
-  font-family: "Lora", serif;
+  font-family: "Raleway", sans-serif;
   color: rgba(46, 46, 46, 0.6);
   font-size: 16px;
   font-size: 0.8rem;
 }
-
-.tags span {
+.blogContainer .tags a {
+  font-family: "Lora", serif;
+}
+.blogContainer .blogHead {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #2E2E2E;
@@ -898,6 +900,36 @@ header {
 .author .userNameSpan {
   display: inline-block;
   margin-bottom: 10px;
+}
+
+.relatedPosts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.relatedPosts li {
+  width: 32%;
+}
+.relatedPosts li a img:first-child:hover,
+.relatedPosts li a img:first-child:focus {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+.relatedPosts li a h4:hover,
+.relatedPosts li a h4:focus {
+  color: #64A604;
+}
+.relatedPosts img {
+  margin-bottom: 20px;
+}
+.relatedPosts a:not(:first-child) {
+  font-weight: 700;
+}
+.relatedPosts h3 {
+  margin-bottom: 20px;
 }
 
 footer {
