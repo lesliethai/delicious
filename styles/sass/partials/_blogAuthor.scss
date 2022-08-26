@@ -1,0 +1,22 @@
+.author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .authorImgContainer {
+        width: 19%;
+        min-height: 200px;
+    }
+
+    .aboutAuthor {
+        width: 78%;
+        background-color: rgba($color: $primary, $alpha: 0.1);
+        min-height: 200px; 
+        padding: 40px 30px;
+    }
+
+    .userNameSpan {
+        display: inline-block; 
+        margin-bottom: 10px;
+    }
+}

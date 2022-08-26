@@ -7,25 +7,17 @@
 
     a:hover,
     a:focus {
-        color: $secondary;
+        color: $secondary; 
     }
 }
 
 .recipesBlog {
-    padding-bottom: 25px; 
-    margin-bottom: 25px; 
-    border-bottom: 1px solid rgba($color: $primary, $alpha: 0.4);
-
     p:not(last-child) {
         margin-bottom: 25px; 
     }
 }
 
 .tags {
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid rgba($color: $primary, $alpha: 0.4); 
-
     .recipesTag {
         margin-bottom: 25px; 
     }

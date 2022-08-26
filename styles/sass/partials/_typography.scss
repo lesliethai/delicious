@@ -57,7 +57,7 @@ p {
     letter-spacing: 0.6px; 
 }
 
-.blogContainer a {
+.blogContainer a { 
     font-family: 'Lora', serif; 
     color: rgba($color: $tertiary, $alpha: 0.6); 
     @include fontSize(16);
@@ -65,13 +65,22 @@ p {
 
 .tags {
     span {
-        text-transform: uppercase;
         font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
         color: $tertiary;
         letter-spacing: 0.5px;
         @include fontSize(18);
         font-weight: 700;
     }
+}
+
+.userNameSpan {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    @include fontSize(18);
+    font-weight: 700;
+    color: $tertiary;
+    letter-spacing: 0.5px; 
 }
 
 footer {
