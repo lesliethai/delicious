@@ -23,7 +23,7 @@ footer {
 
     a:hover,
     a:focus {
-        opacity: 0.6;
+        color: $secondary;
     }
 
     p:not(:last-child):not(.subscribeNow p),
@@ -41,18 +41,19 @@ footer {
         border-bottom: 1px solid rgba($color: $primary, $alpha: 0.3);
         padding: 20px 0 30px;
     }
-    
+
     input,
     button { 
         border: none;
         padding: 13px 20px;
     }
 
-    input { 
+    input {  
         &#email {
             background-color: rgba($color: $primary, $alpha: 0.4);
             min-width: 75%; 
             outline: none;
+            color: $quaternary;
 
             &:hover,
             &:focus {
@@ -91,7 +92,7 @@ footer {
 
         &:hover,
         &:focus {
-            opacity: 0.6;
+            color: $secondary;
         }
     }
 

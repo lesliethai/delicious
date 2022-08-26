@@ -133,13 +133,14 @@
                             <a href="#">
                                 <img src="./assets/blog-5.jpeg" alt="A piece of toast with tuna, onions, and various other vegetables.">
                                 <h4 class="blogHead relatedHead">Single post with image</h4>
-                            </a>
+                            </a> 
                             <p><time datetime="2018-07-22">July 22, 2018</time> | by <a href="#">Admin</a> | in <a href="#">Recipes</a></p>
                         </li>
                     </ul>
                 </section><!--END .relatedPosts section-->
-                <section class="comments">
-                    <h4>02 comments</h4>
+
+                <section class="comments"> 
+                    <h4 class="blogHead">02 comments</h4>
                     <article class="userComment">
                         <img src="./assets/blog-6.jpeg" alt="A profile picture of a site user.">
                         <div>
@@ -157,7 +158,9 @@
                         </div>
                     </article>
                 </section><!--END .comments section-->
-                <section class="commentForm">
+
+                <section class="commentFormContainer">
+                    <h2 class="blogHead">Leave a comment</h2>
                     <p>Your email will not be published. Required fields are marked *</p>
                     <form action="#" method="#" class="commentForm">
 
@@ -172,7 +175,7 @@
                             <input type="text" id="website" placeholder="Your Website">
                         </div>
                         <label for="comment" class="srOnly">Comment</label>
-                        <textarea name="comment" id="comment" cols="30" rows="10">Comment</textarea>
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
 
                         <button class="linkButton">Submit Comment</button>
                     </form>

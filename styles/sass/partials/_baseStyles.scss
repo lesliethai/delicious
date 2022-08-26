@@ -19,6 +19,11 @@ a {
     text-decoration: none; 
 }
 
+a:hover, a:focus,
+button:hover, button:focus {
+    cursor: pointer; 
+}
+
 .linkButton {
     color: $quaternary; 
     background-color: $secondary; 
