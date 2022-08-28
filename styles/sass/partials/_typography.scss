@@ -58,10 +58,15 @@ p {
 }
 
 .blogContainer {
-    a { 
+    a, 
+    .blogHead,
+    .commentName { 
     font-family: 'Raleway', sans-serif;
-    color: rgba($color: $tertiary, $alpha: 0.6); 
-    @include fontSize(16);
+    }
+
+    a {
+        color: rgba($color: $tertiary, $alpha: 0.6);
+        @include fontSize(16);
     }
 
     .tags a {
@@ -75,6 +80,15 @@ p {
         letter-spacing: 0.5px;
         @include fontSize(18);
         font-weight: 700;
+    }
+
+    .commentName {
+        @include fontSize(18); 
+    }
+
+    .commentUserTitle {
+        font-weight: 400; 
+        @include fontSize(17); 
     }
 }
 

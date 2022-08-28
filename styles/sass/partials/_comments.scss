@@ -1,0 +1,41 @@
+.comments {
+
+    .userComment { 
+        display: flex;
+        margin-top: 40px;  
+    }
+
+    .userAvatarContainer {
+        width: 75px;
+        height: 75px;
+        margin-right: 25px; 
+    }
+
+    .userCommentContainer {
+        width: 89%;
+        margin-left: auto; 
+        background-color: $comment;
+        padding: 15px 25px;
+        position: relative;
+
+        h5 {
+            margin-bottom: 10px;
+        }
+
+        &::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-right: 10px solid $comment;
+            display: inline-block;
+            position: absolute;
+            left: -9px; 
+        }
+    }
+
+    .commentParagraph {
+        margin-bottom: 10px; 
+    }
+}

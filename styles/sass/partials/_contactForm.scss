@@ -107,6 +107,11 @@
 
     .contactDetails {
         background-color: rgba($color: $primary, $alpha: 0.1); 
+
+        a:hover,
+        a:focus {
+            color: $secondary;
+        }
     }
 
     .sendMsgBtn {

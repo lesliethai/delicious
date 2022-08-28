@@ -1,18 +1,21 @@
 .author {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 
-    .authorImgContainer {
-        width: 19%;
-        min-height: 200px;
+    img {
+        width: 100%;
+        object-fit: cover; 
+        flex: 1;
+        margin-right: 10px;
     }
 
     .aboutAuthor {
-        width: 78%;
+        width: 100%;
+        flex: 4;
         background-color: rgba($color: $primary, $alpha: 0.1);
-        min-height: 200px; 
-        padding: 40px 30px;
+        padding: 20px 30px;
+        display: flex; 
+        align-items: center; 
     }
 
     .userNameSpan {

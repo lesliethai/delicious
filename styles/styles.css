@@ -315,8 +315,12 @@ p {
   letter-spacing: 0.6px;
 }
 
-.blogContainer a {
+.blogContainer a,
+.blogContainer .blogHead,
+.blogContainer .commentName {
   font-family: "Raleway", sans-serif;
+}
+.blogContainer a {
   color: rgba(46, 46, 46, 0.6);
   font-size: 16px;
   font-size: 0.8rem;
@@ -332,6 +336,15 @@ p {
   font-size: 18px;
   font-size: 0.9rem;
   font-weight: 700;
+}
+.blogContainer .commentName {
+  font-size: 18px;
+  font-size: 0.9rem;
+}
+.blogContainer .commentUserTitle {
+  font-weight: 400;
+  font-size: 17px;
+  font-size: 0.85rem;
 }
 
 .userNameSpan {
@@ -399,6 +412,8 @@ img {
 
 a {
   text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 a:hover, a:focus,
@@ -450,6 +465,10 @@ button:hover, button:focus {
 
 header {
   padding: 40px;
+}
+header h1 {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .mainHeader {
@@ -616,8 +635,8 @@ header {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #2E2E2E;
-  font-size: 35px;
-  font-size: 1.75rem;
+  font-size: 30px;
+  font-size: 1.5rem;
   position: absolute;
   left: -40px;
   top: 3px;
@@ -831,6 +850,10 @@ header {
 .contactSection .contactDetails {
   background-color: rgba(153, 153, 153, 0.1);
 }
+.contactSection .contactDetails a:hover,
+.contactSection .contactDetails a:focus {
+  color: #64A604;
+}
 .contactSection .sendMsgBtn {
   border: none;
   background-color: transparent;
@@ -888,19 +911,29 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.author img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 10px;
+}
+.author .aboutAuthor {
+  width: 100%;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  background-color: rgba(153, 153, 153, 0.1);
+  padding: 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.author .authorImgContainer {
-  width: 19%;
-  min-height: 200px;
-}
-.author .aboutAuthor {
-  width: 78%;
-  background-color: rgba(153, 153, 153, 0.1);
-  min-height: 200px;
-  padding: 40px 30px;
 }
 .author .userNameSpan {
   display: inline-block;
@@ -918,10 +951,15 @@ header {
 .relatedPosts li {
   width: 32%;
 }
+.relatedPosts li a img,
+.relatedPosts li h4 {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .relatedPosts li a img:first-child:hover,
 .relatedPosts li a img:first-child:focus {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  -webkit-box-shadow: 0 0 3px 3px rgba(46, 46, 46, 0.2);
+          box-shadow: 0 0 3px 3px rgba(46, 46, 46, 0.2);
 }
 .relatedPosts li a h4:hover,
 .relatedPosts li a h4:focus {
@@ -941,12 +979,36 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 40px;
 }
-.comments .userComment img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
+.comments .userAvatarContainer {
+  width: 75px;
+  height: 75px;
+  margin-right: 25px;
+}
+.comments .userCommentContainer {
+  width: 89%;
+  margin-left: auto;
+  background-color: #EBEBEB;
+  padding: 15px 25px;
+  position: relative;
+}
+.comments .userCommentContainer h5 {
+  margin-bottom: 10px;
+}
+.comments .userCommentContainer::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 10px solid #EBEBEB;
+  display: inline-block;
+  position: absolute;
+  left: -9px;
+}
+.comments .commentParagraph {
+  margin-bottom: 10px;
 }
 
 .commentFormContainer {

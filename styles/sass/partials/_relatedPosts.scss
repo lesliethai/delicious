@@ -7,9 +7,14 @@
     li {
         width: 32%;
 
+        a img,
+        h4 {
+            transition: 0.3s; 
+        }
+        
         a img:first-child:hover,
         a img:first-child:focus {
-            transform: scale(1.02);
+            box-shadow: 0 0 3px 3px rgba($color: $tertiary, $alpha: 0.2);
         } 
 
         a h4:hover,
