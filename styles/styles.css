@@ -1180,6 +1180,9 @@ footer .copyright {
   padding: 20px 0;
   width: 100%;
 }
+footer .blogSubscribe {
+  margin-bottom: 68px;
+}
 
 @media (max-width: 1260px) {
   .navBar li:not(:last-child) {
@@ -1529,6 +1532,9 @@ footer .copyright {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  footer .blogSubscribe {
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 400px) {
