@@ -17,7 +17,7 @@
 
             .item {
                 width: 45%; 
-
+ 
                 &:not(.itemnoMargin) {
                     margin-bottom: 10px;
                 }
@@ -46,74 +46,28 @@
     .quote {
         @include fontSize(20); 
     }
+
+    .blogContainer {
+        .blogHead {
+            @include fontSize(16);  
+        }
+    }
 }
 
 @media (max-width: 1110px) {
-    .headerNav {
-        display: none;
-    }
+    header {
+        padding: 40px 20px; 
 
-    .slideMenu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 50;
-
-        ul {
-            margin-top: 100px;
+        h1 {
+            @include fontSize(40);
         }
 
-        li {
-            list-style: none;
-            width: 100%;
-            padding: 10px 30px;
-
-            &:not(:last-child) {
-                margin-bottom: 10px;
-            }
-
-            &:hover,
-            &:focus {
-                background-color: rgba($color: $secondary, $alpha: 0.2);
-            }
+        nav a {
+            @include fontSize(17);
         }
 
-        a {
-            display: inline-block;
-            width: 100%;
-        }
-
-        button {
-            position: fixed;
-            right: 0;
-            top: 25px;
-            background-color: rgba($color: $secondary, $alpha: 0.8);
-            color: $quaternary;
-            padding: 10px 15px;
-            border: 1px solid transparent;
-            @include fontSize(25);
-            transition: 0.3s;
-
-            &:hover,
-            &:focus {
-                background-color: $quaternary;
-                color: $secondary;
-                border: 1px solid $secondary;
-            }
-        }
-
-        .slideOut {
-            position: fixed;
-            top: 0;
-            right: 0;
-            z-index: 30;
-            width: 300px;
-            background-color: $quaternary;
-
-            ul {
-                display: flex;
-                flex-direction: column;
-            }
+        .navBar li:not(:last-child) {
+            margin-right: 20px;
         }
     }
     
@@ -191,7 +145,12 @@
             width: 90%;
         }
     }
-
+    
+    .blog .wrapper {
+        .wrapper {
+            width: 70%;
+        }
+    }
     footer {
         .footerFlexContainer {
             div {
@@ -199,10 +158,90 @@
             }
         }
     }
+
+    .blogMain {
+        .wrapper {
+            width: 70%;
+        }
+
+        .blogContainer {
+            margin-top: 100px;
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .headerNav {
+        display: none;
+    }
+    
+    .slideMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 50;
+
+        ul {
+            margin-top: 100px;
+        }
+
+        li {
+            list-style: none;
+            width: 100%;
+            padding: 10px 30px;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 30px;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba($color: $secondary, $alpha: 0.2);
+            }
+        }
+
+        a {
+            display: inline-block;
+            width: 100%;
+        }
+
+        button {
+            position: fixed;
+            right: 0;
+            top: 75px; 
+            background-color: rgba($color: $secondary, $alpha: 0.8);  
+            color: $quaternary;
+            padding: 10px 15px;
+            border: 1px solid transparent;
+            @include fontSize(25);
+            transition: 0.3s;
+
+            &:hover,
+            &:focus {
+                background-color: rgba($color: $quaternary, $alpha: 0.8);
+                color: $secondary;
+                border: 1px solid $secondary;
+            }
+        }
+
+        .slideOut {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 30;
+            width: 300px;
+            background-color: $quaternary;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
 }
 
 @media (max-width: 750px) { 
-    
     .recipes{
         .popularRecipesContent {
             width: 90%;
@@ -221,9 +260,13 @@
             .item {
                 width: 100%; 
 
-                &:not(.itemNoMargin) {
+                &:not(.itemNoMargin) { 
                     margin-bottom: 35px;
                 }
+            }
+
+            .item5 p {
+                margin-bottom: 35px; 
             }
         }
 
@@ -318,6 +361,52 @@
         min-height: 20vh;
     }
 
+
+    .blogMain {
+        .wrapper {
+            width: 90%;
+        }
+
+        .blogContainer {
+            margin-top: 75px;
+        }
+
+        .author {
+            display: block;
+
+            img {
+                width: 150px;
+                margin: 0 auto; 
+                margin-bottom: 25px; 
+            } 
+        }
+
+        .relatedPosts {
+            ul {
+                flex-wrap: wrap;
+            }
+
+            li {
+                width: 100%; 
+            }
+
+            li:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+
+        .commentFormContainer {
+
+            .commentFormFlex {
+                display: block;
+            }
+
+            input {
+                width: 100%; 
+            }
+        }
+    }
+
     footer {
         
         .footerFlexContainer {
@@ -339,6 +428,47 @@
 
         form {
             justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .imgGallery {
+        li {
+            width: 100%;
+        }
+    }
+    .clientQuote {
+
+        &::before {
+            top: 22%;
+            left: 5%;
+        }
+
+        &::after {
+            bottom: 22%;
+            right: 5%;
+        }
+    }
+
+    .recipes .recipesListContent {
+        margin-left: 50px; 
+    }
+
+    .restaurants {
+        margin: 75px 0 25px;
+
+        .restaurantsImg {
+            margin: 25px 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .restaurantsLogo {
+            width: 23%;
+            right: -2%;
         }
     }
 }
