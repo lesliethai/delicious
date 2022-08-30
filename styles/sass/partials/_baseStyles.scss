@@ -30,6 +30,7 @@ button:hover, button:focus {
     background-color: $secondary; 
     padding: 15px 45px;
     height: 54px;
+    border: 1px solid transparent;
     transition: 0.3s;
 
     &:hover,
