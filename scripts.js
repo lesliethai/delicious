@@ -1,21 +1,18 @@
+// namespace object
 const app = {};
 
-const slideOut = document.querySelector(".slideOut");
+// selectors
+const menuOpen = document.querySelector(".menuOpen");
 const menuClose = document.querySelector(".menuClose");
+const slideOut = document.querySelector(".slideOut");
 
-app.init = () => {
+menuOpen.addEventListener('click', function(event){
+    event.preventDefault();
+    slideOut.classList.remove("displayNone");
+});
 
-    $('.menuOpen').on('click', function(event) {
-        event.preventDefault();
-        slideOut.classList.remove("displayNone");
-    })
+menuClose.addEventListener('click', function(event){
+    event.preventDefault();
+    slideOut.classList.add("displayNone");
+}); 
 
-    $('.menuClose').on('click', function (event) {
-        event.preventDefault();
-        slideOut.classList.add("displayNone");
-    })
-}
-
-$(document).ready(function () {
-    app.init();
-});  
