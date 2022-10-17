@@ -4,8 +4,17 @@ const app = {};
 // selectors
 app.menuOpen = document.querySelector(".menuOpen");
 app.menuClose = document.querySelector(".menuClose");
-app.slideOut = document.querySelector(".slideOut");
 app.searchButton = document.querySelector(".fa-magnifying-glass");
+app.searchClose = document.querySelector(".closeSearch"); 
+
+// function to toggle slide out menu display
+function slide() {
+    document.querySelector(".slideOut").classList.toggle("displayNone");
+}
+
+function toggleSearch() {
+    document.querySelector(".searchPage").classList.toggle("displayNone");
+}
 
 // opens mobile menu on click
 app.menuOpen.addEventListener('click', function(){
@@ -17,12 +26,8 @@ app.menuClose.addEventListener('click', function(){
     slide();
 }); 
 
-// function to toggle slide out menu display
-function slide(){
-    app.slideOut.classList.toggle("displayNone"); 
-}
+// open searchPage when click magnifying glass
+app.searchButton.addEventListener('click', toggleSearch);
 
-// open searchPage
-app.searchButton.addEventListener('click', function(){
-    document.querySelector(".searchPage").classList.toggle("displayNone");
-})
+// close searchPage when click X
+app.searchClose.addEventListener('click', toggleSearch);
