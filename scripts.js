@@ -12,6 +12,7 @@ function slide() {
     document.querySelector(".slideOut").classList.toggle("displayNone");
 }
 
+// function to toggle search page display
 function toggleSearch() {
     document.querySelector(".searchPage").classList.toggle("displayNone");
 }
@@ -26,8 +27,8 @@ app.menuClose.addEventListener('click', function(){
     slide();
 }); 
 
-// open searchPage when click magnifying glass
+// open searchPage when magnifying glass is clicked
 app.searchButton.addEventListener('click', toggleSearch);
 
-// close searchPage when click X
+// close searchPage when x is clicked
 app.searchClose.addEventListener('click', toggleSearch);
