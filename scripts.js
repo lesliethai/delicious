@@ -1,34 +1,39 @@
 // namespace object
 const app = {};
 
-// selectors
-app.menuOpen = document.querySelector(".menuOpen");
-app.menuClose = document.querySelector(".menuClose");
-app.searchButton = document.querySelector(".fa-magnifying-glass");
-app.searchClose = document.querySelector(".closeSearch"); 
+// app.init
+app.init = () => {
+    app.eventListeners();
+    app.arrowFunctions();
+}
+
+// event listeners for clicks 
+app.eventListeners = () => {
+    // selectors 
+    const menuOpen = document.querySelector(".menuOpen");
+    const menuClose = document.querySelector(".menuClose");
+    const searchButton = document.querySelector(".fa-magnifying-glass");
+    const searchClose = document.querySelector(".closeSearch");
+
+    // opens mobile menu on click
+    menuOpen.addEventListener('click', app.slide);
+    // closes mobile menu on click
+    menuClose.addEventListener('click', app.slide);
+
+    // open searchPage when magnifying glass is clicked
+    searchButton.addEventListener('click', app.toggleSearch);
+    // close searchPage when x is clicked
+    searchClose.addEventListener('click', app.toggleSearch);
+}
 
 // function to toggle slide out menu display
-function slide() {
+app.slide = () => {
     document.querySelector(".slideOut").classList.toggle("displayNone");
 }
 
 // function to toggle search page display
-function toggleSearch() {
+app.toggleSearch = () => {
     document.querySelector(".searchPage").classList.toggle("displayNone");
-}
+} 
 
-// opens mobile menu on click
-app.menuOpen.addEventListener('click', function(){
-    slide();
-}); 
-
-// closes mobile menu on click
-app.menuClose.addEventListener('click', function(){
-    slide();
-}); 
-
-// open searchPage when magnifying glass is clicked
-app.searchButton.addEventListener('click', toggleSearch);
-
-// close searchPage when x is clicked
-app.searchClose.addEventListener('click', toggleSearch);
+app.init(); 
