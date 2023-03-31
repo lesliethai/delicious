@@ -40,7 +40,7 @@ app.toggleSearch = () => {
 // array with different quotes
 app.clientQuotes = [
     `Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion.`,
-    `Dragée sesame snaps liquorice shortbread jelly. Bear claw sugar plum macaroon biscuit gummi bears bonbon. Tart topping apple pie biscuit cake. Cake toffee cake cupcake jelly-o chocolate cake cupcake. Biscuit cookie brownie fruitcake gummies oat cake gummi bears cookie oat cake. Sweet marzipan carrot cake oat cake soufflé cotton candy.`, 
+    `Dragée sesame snaps liquorice shortbread jelly. Bear claw sugar plum macaroon biscuit gummi bears bonbon. Tart topping apple pie biscuit cake. Cake toffee cake cupcake jelly-o chocolate cake cupcake. Biscuit cookie brownie fruitcake gummies oat cake gummi bears cookie oat cake. Sweet marzipan.`, 
     `Bacon ipsum dolor amet corned beef swine salami ham hamburger chuck jowl shoulder pig. Short loin chuck hamburger turducken ball tip. Cow tri-tip pig, capicola fatback porchetta pancetta. Pork loin flank corned beef, rump spare ribs short loin short ribs buffalo pastrami fatback tongue beef chislic.`
 ]
 
