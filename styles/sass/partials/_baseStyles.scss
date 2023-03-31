@@ -15,6 +15,10 @@ img {
     display: block;
 }
 
+address {
+    font-style: normal;
+}
+
 a {
     text-decoration: none; 
     transition: 0.3s;
@@ -24,6 +28,7 @@ a:hover, a:focus,
 button:hover, button:focus {
     cursor: pointer; 
 }
+
 
 .linkButton {
     color: $quaternary; 
@@ -69,3 +74,4 @@ button:hover, button:focus {
     margin-bottom: 30px;
     border-bottom: 1px solid rgba($color: $primary, $alpha: 0.4);
 }
+

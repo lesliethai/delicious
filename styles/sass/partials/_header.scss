@@ -77,6 +77,16 @@ header {
             align-items: center;
         }
     }
+
+    .fa-magnifying-glass {
+        transition: 0.3s;
+        
+        &:focus,
+        &:hover {
+            color: $secondary;
+            cursor: pointer; 
+        }
+    }
 }
 
 .slideMenu {

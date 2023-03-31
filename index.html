@@ -78,6 +78,22 @@
     </header> <!--END header-->
 
     <main id="mainContent">
+        <section class="searchPage displayNone">
+            <div class="searchPageContent">
+                <button class="closeSearch">X
+                </button> 
+                <h2 class="greenBorder">Search Recipes</h2>
+                <form action="#" method="#" class="searchBar" name="searchBar">
+                    <div class="searchFormTop">
+                        <label for="text" class="srOnly">Search for recipes:</label>
+                        <input type="text" id="searchBar" placeholder="Search for recipes...">
+                    </div>
+                    <button class="submit linkButton">Search</button>
+                </form>
+            </div>
+        </section>
+
+
         <section class="recipes">
             <div class="popularRecipes">
                 <div class="popularRecipesContent">
@@ -170,9 +186,11 @@
                 <div class="footerDelicious">
                     <h4>Delicious</h4>
                     <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</p>
-                    <p>A delicious restaurant <span>Toronto, Ontario</span></p>
-                    <p><a href="mailto:yum@food.com">yum@food.com</a></p>
-                    <p>+1 234 567 8910</p> 
+                    <address>
+                        <p>A delicious restaurant <span>Toronto, Ontario</span></p>
+                        <p><a href="mailto:yum@food.com">yum@food.com</a></p>
+                        <p><a href="tel:+1234-567-8910">+1 234 567 8910</a></p>
+                    </address>
                 </div> <!--END .footerDelicious-->
 
                 <div class="recentPosts">
@@ -229,7 +247,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="scripts.js"></script>
 </body>
 </html>
